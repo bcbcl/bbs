@@ -1,0 +1,24 @@
+/* 默认 */
+* {
+    cursor:url(mouse/pointer.cur),auto;
+}
+/* 文本 */
+.text-cursor {
+    cursor:url(mouse/text.cur),auto;
+}
+/* 指针 */
+.link-cursor {
+    cursor:url(mouse/link.cur),auto;
+}
+/* 不可用 */
+.not-cursor {
+    cursor:url(mouse/not.cur),auto;
+}
+/* ? */
+.help-cursor {
+    cursor:url(mouse/help.cur),auto;
+}
+/* 笔 */
+.handwriting-cursor {
+    cursor:url(mouse/handwriting.cur),auto;
+}

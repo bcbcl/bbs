@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="../Universal.css">
+        <link rel="stylesheet" type="text/css" href="../bcbsbbs.css">        
+        <title>bcbsbbs</title>
+        <script>
+        </script>
+        <style>
+            *{
+                user-select: none;
+                -webkit-user-select: none;
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+            #sbj{
+                position: relative;
+                width: 100%;
+                height: 4rem;
+                background-color: #ffffff;
+                overflow: hidden;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                /* border-bottom: 2px inset #cfd0cd; */
+            }
+            body{
+                background-color: #efefef;
+            }
+            #bcbsbbsk{
+                position: fixed;
+                top: 2.4vh;
+                left: 2vw;
+                width: auto;
+                font-size: 2vw;
+                opacity: 100%;
+                z-index: 20;
+            }
+            #cbk{
+                display: flex;
+                position: relative;
+                list-style: none;
+                justify-content: center;
+                transform: translate(0,-100%);
+                top: 83%;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+                gap: 1%;
+            }
+            .cbk-k{
+                width: 4rem;
+                height: 2rem;
+                font-size: 1.5rem;
+                background-color: #f1f1f1;
+                border-radius: 80px;
+                border-right-width: 20px;
+                text-align: center;
+            }
+            #footer{
+                width: 100%;
+                height: 80px;
+                background-color: #e4e4e4;
+                overflow: hidden;
+                content: "";
+                position: absolute;
+                left: 0;
+                margin-top: 64px;
+                z-index: -1;
+            }
+            #fre{
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 0.5%;
+            }
+            .fer{
+                position: relative;
+                top: 1rem;
+                left: -2%;
+                width: 3rem;
+                height: 3rem;
+            }
+            #faa{
+                position: relative;
+                top: -1.5rem;
+                left: 0%;
+                font-size: 1rem;
+            }
+            #lbl{
+                margin-top: 80px;
+                width: 100vw;
+                height: auto;
+            }
+        </style>
+        <script>
+            window.addEventListener('scroll', function() {  
+                var element = document.getElementById("bcbsbbsk");  
+                if (window.scrollY !== 0) {
+                    element.style.opacity = "0.4";
+                }
+                else{
+                    element.style.opacity = "1";
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2 id="bcbsbbsk">bcbsbbs</h2>
+            <script src="../bcbsbbs.js"></script>
+        </div>
+
+        <div id="MAI">
+            <div id="sbj">
+                <ul id="cbk">
+                    <li><h2 class="cbk-k">发现&nbsp</h2></li>
+                    <li><h2 class="cbk-k">主页&nbsp</h2></li>
+                    <li><h2 class="cbk-k">频道&nbsp</h2></li>
+                </ul>
+            </div>
+
+            <iframe src="../Welcome/Welcome.html" id="lbl" frameborder="0"></iframe>
+
+            <div id="footer">
+                <div id="fre">
+                    <img src="../bcb.png" alt="bcb" class="fer">
+                </div>
+                <p id="faa">
+                    所有者 bcb<br>
+                    @bcbcl
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>

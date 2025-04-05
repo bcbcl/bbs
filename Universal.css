@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'zzt';
+    src: url('zzt.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'zzt', sans-serif;
+}
